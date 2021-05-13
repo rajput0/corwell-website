@@ -94,7 +94,7 @@
             <!-- Inside for loop -->
             <div class="card col-lg-3 col-md-4 col-sm-6 mt-3" style="height:420px; text-align: center; margin: 10px auto;">
                 <!-- <img class="card-img-top" src="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Card image cap"> -->
-                <img class="card-img-top" style="height:200px; max-width: 300px; object-fit: fill; " src="data:image/jpg;base64,<%=products[i].images[0]%>" alt="Card image cap">
+                <img class="card-img-top" style="height:200px; max-width: 300px; object-fit: contain; " src="data:image/jpg;base64,<%=products[i].images[0]%>" alt="Card image cap">
                 <div class="card-body" style="max-height: 200px;">
                     <h5 class="card-title"><%= products[i].productName %></h5>
                     <p class="text-danger"><%=products[i].isAvailable ? "" : "Not Available"%></p>
